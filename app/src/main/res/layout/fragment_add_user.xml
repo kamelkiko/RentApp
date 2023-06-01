@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_of_users"
+    tools:context="fragment.addUser.AddUserFragment">
+
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp"
+        android:textDirection="rtl">
+
+        <EditText
+            android:id="@+id/person_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="person_name"
+            android:fontFamily="casual"
+            android:hint="@string/person_name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/person_name_owner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="person_name"
+            android:fontFamily="casual"
+            android:hint="@string/owner"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/person_name_rent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="person_name"
+            android:fontFamily="casual"
+            android:hint="@string/name_rent"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/person_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="casual"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="@string/date_rent"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="2dp"
+            android:background="#000" />
+
+        <EditText
+            android:id="@+id/person_period"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="number"
+            android:fontFamily="casual"
+            android:hint="@string/period_rent"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/person_address"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="postalAddress"
+            android:fontFamily="casual"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/rental_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="number"
+            android:fontFamily="casual"
+            android:hint="@string/money"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/person_raise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="number"
+            android:fontFamily="casual"
+            android:hint="@string/raise"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/person_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="number"
+            android:fontFamily="casual"
+            android:hint="@string/id"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/insurance_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="number"
+            android:fontFamily="casual"
+            android:hint="@string/insurance_value"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="@string/image_rent"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rent_image"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+
+            <ImageView
+                android:id="@+id/rent_image_back"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="2dp"
+            android:background="#000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/btn_style1"
+            android:fontFamily="cursive"
+            android:text="@string/save"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:elevation="@dimen/_20sdp"
+            app:icon="@drawable/save"
+            app:iconTintMode="multiply"
+            app:layout_constraintTop_toBottomOf="@id/box" />
+    </LinearLayout>
+
+
+</ScrollView>

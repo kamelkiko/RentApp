@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272f36"
+    tools:context=".fragment.details.DetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:textDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:textDirection="rtl">
+
+            <ImageView
+                android:id="@+id/front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_20sdp"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/close" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:elevation="@dimen/_20sdp"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/close" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="اسم الساكن : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/person_name"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="اسم مالك العقار :  "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/owner"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="اسم المستلم : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/name_rent"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="تاريخ السكن : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/date_rent"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="مدة السكن : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/period"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/period_rent"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="سنوات"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="انتهاء السكن : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/diff"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/period_rent"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="عنوان المنزل : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/address"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="القيمة الايجارية : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="@font/gotham"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/money"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="الايجار بعد الزيادة السنوية  : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/net_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="@font/gotham"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/money"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="الزيادة السنوية : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/raise"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="@font/gotham"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/raise"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="%"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="الرقم القومي : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/id"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="casual"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="مبلغ التأمين : "
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:autofillHints="person_name"
+                android:fontFamily="@font/gotham"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_10sdp"
+                android:text="@string/insurance_value"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style1"
+                android:fontFamily="cursive"
+                android:text="@string/Edit"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:elevation="@dimen/_20sdp"
+                app:icon="@drawable/edit"
+                app:iconTintMode="multiply" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/to_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style1"
+                android:fontFamily="cursive"
+                android:text="@string/to_pdf"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:elevation="@dimen/_20sdp"
+                app:icon="@drawable/invoice"
+                app:iconTintMode="multiply" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_style1"
+                android:fontFamily="cursive"
+                android:text="@string/remove"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                app:backgroundTint="@null"
+                app:elevation="@dimen/_20sdp"
+                app:icon="@drawable/close"
+                app:iconTintMode="multiply" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

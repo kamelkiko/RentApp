@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bk"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:textDirection="rtl">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:orientation="vertical"
+                android:textDirection="rtl"
+                tools:ignore="UselessParent">
+
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/imageView2"-->
+                <!--                    android:layout_width="@dimen/_160sdp"-->
+                <!--                    android:layout_height="@dimen/_80sdp"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:contentDescription="@string/app_name"-->
+                <!--                    android:scaleType="fitXY"-->
+                <!--                    android:src="@drawable/logo" />-->
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="cursive"
+                    android:shadowColor="#000"
+                    android:shadowDx="12"
+                    android:shadowDy="12"
+                    android:shadowRadius="12"
+                    android:text="@string/pound"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_40sdp"
+                    android:textStyle="bold"
+                    app:elevation="@dimen/_15sdp" />
+
+                <View
+                    android:layout_width="@dimen/_190sdp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:background="#000" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="استلمت انا / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_name_rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:text="ابو حمزة"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="عن مالك العقار /  "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_name_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:text="علي"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="مبلغ و قدره / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="3000" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="من الساكن / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="كامل" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="شارع / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="8 - شارع ماهر" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="و هذا عن ايجار فترة من / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_from_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="12/12/1522" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="حتي / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_to_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="12/12/1523" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="ملاحظات / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="لا يوجد" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="متأخرات سداد مياه / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="لا يوجد" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="تاريخ انتهاء المدة السكنية / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="12/12/1523" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/_10sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="تم تحرير الايصال بتاريخ / "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/pdf_current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/gotham"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                app:elevation="@dimen/_15sdp"
+                tools:text="12/12/1523" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="left"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_30sdp"
+            android:textDirection="rtl">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/calibri"
+                android:text="المستلم"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_30sdp"
+            android:textDirection="rtl">
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:layout_marginBottom="@dimen/_5sdp"-->
+            <!--                android:fontFamily="@font/calibri"-->
+            <!--                android:text="كل شهر و انتم طيبين"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textSize="@dimen/_22sdp"-->
+            <!--                android:textStyle="bold" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:fontFamily="@font/calibri"
+                android:text="للاستفسار أ / محمد 01118923475"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

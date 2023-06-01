@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_285sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/delete_dialog"
+    app:elevation="@dimen/_20sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/_10sdp"
+        android:textDirection="rtl"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="text"
+            android:fontFamily="casual"
+            android:hint="ملاحظات"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:autofillHints="phone"
+            android:fontFamily="casual"
+            android:hint="متاخر سداد مياة"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:paddingRight="@dimen/_10sdp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="2dp"
+            android:background="#000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/create_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/btn_style1"
+            android:fontFamily="cursive"
+            android:text="طباعة الوصل"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:elevation="@dimen/_20sdp"
+            app:icon="@drawable/invoice"
+            app:iconTintMode="multiply" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

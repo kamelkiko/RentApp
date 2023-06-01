@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.kiko.rentapp.fragment.login.LoginFragment"
+        android:label="fragment_login">
+        <action
+            android:id="@+id/toHomeFromLogin"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@+id/my_nav"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.kiko.rentapp.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/toUserMFromHome"
+            app:destination="@id/userManagementFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/fromHomeToPdf"
+            app:destination="@id/pdfFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/fromHomeToSalary"
+            app:destination="@id/salaryFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/userManagementFragment"
+        android:name="com.kiko.rentapp.fragment.userManage.UserManagementFragment"
+        android:label="fragment_user_management"
+        tools:layout="@layout/fragment_user_management">
+        <action
+            android:id="@+id/toAddUser"
+            app:destination="@id/addUserFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/toDetailsFromUser"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="com.kiko.rentapp.fragment.addUser.AddUserFragment"
+        android:label="fragment_add_user"
+        tools:layout="@layout/fragment_add_user">
+        <action
+            android:id="@+id/toUserFromAdd"
+            app:destination="@id/userManagementFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_in_left"
+            app:popUpTo="@+id/userManagementFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.kiko.rentapp.fragment.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/toUserMFromDetails"
+            app:destination="@id/userManagementFragment"
+            app:enterAnim="@android:anim/fade_out"
+            app:exitAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@android:anim/slide_in_left"
+            app:popUpTo="@+id/userManagementFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/toUpdateFromDetails"
+            app:destination="@id/updateFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@+id/updateFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="currentUser"
+            app:argType="com.kiko.rentapp.model.User" />
+        <argument
+            android:name="position"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.kiko.rentapp.fragment.update.UpdateFragment"
+        android:label="fragment_update"
+        tools:layout="@layout/fragment_update">
+        <argument
+            android:name="currentUser"
+            app:argType="com.kiko.rentapp.model.User" />
+        <action
+            android:id="@+id/toUserFromUpdate"
+            app:destination="@id/userManagementFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@+id/userManagementFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.kiko.rentapp.fragment.pdf.PdfFragment"
+        android:label="fragment_pdf"
+        tools:layout="@layout/fragment_pdf" >
+        <action
+            android:id="@+id/fromPdfToReport"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.kiko.rentapp.fragment.splash.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/fromSplashToLogin"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@+id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/salaryFragment"
+        android:name="com.kiko.rentapp.fragment.salary.SalaryFragment"
+        android:label="fragment_salary"
+        tools:layout="@layout/fragment_salary">
+        <action
+            android:id="@+id/fromSalaryToNotPaid"
+            app:destination="@id/notPaidFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/notPaidFragment"
+        android:name="com.kiko.rentapp.fragment.notPaid.NotPaidFragment"
+        android:label="fragment_not_paid"
+        tools:layout="@layout/fragment_not_paid" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.kiko.rentapp.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/toDetailsFromReport"
+            app:destination="@id/reportDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportDetailsFragment"
+        android:name="com.kiko.rentapp.ReportDetailsFragment"
+        android:label="fragment_report_details"
+        tools:layout="@layout/fragment_report_details" >
+        <argument
+            android:name="currentPdf"
+            app:argType="com.kiko.rentapp.pdf.UserPdf" />
+        <argument
+            android:name="position"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

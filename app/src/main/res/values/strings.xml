@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">RentApp</string>
+    <string name="logo">Logo</string>
+    <string name="nwrt">نورت</string>
+    <string name="background">background</string>
+    <string name="morning">Morning</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Login</string>
+    <string name="welcome">Welcome</string>
+    <string name="save">حفظ</string>
+    <string name="add_user">اضافة ساكن</string>
+    <string name="person_name">اسم الساكن</string>
+    <string name="date_rent">تاريخ السكن</string>
+    <string name="period_rent">مدة السكن</string>
+    <string name="address">عنوان المنزل</string>
+    <string name="money">القيمة الايجارية</string>
+    <string name="raise">الزيادة السنوية للايجار</string>
+    <string name="id">الرقم القومي</string>
+    <string name="delete">هل متاكد من الحذف ؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="image_rent">صورة العقد وش وضهر</string>
+    <string name="insurance_value">مبلغ التأمين</string>
+    <string name="Edit">تعديل</string>
+    <string name="remove">حذف</string>
+    <string name="to_pdf">عمل وصل ايجار</string>
+    <string name="search">بحث</string>
+    <string name="pound">ايصال ايجار</string>
+    <string name="amount_of_rental">قيمة الايجار</string>
+    <string name="number_house">عقار رقم</string>
+    <string name="name_rent">اسم المستلم</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="owner">اسم المالك</string>
+    <string name="not_paid">الايجار المكسور</string>
+    <string name="remove_all">حذف الكل</string>
+    <string name="reports">التقارير</string>
+    <string name="welcome_back">اهلا بعودتكم</string>
+</resources>

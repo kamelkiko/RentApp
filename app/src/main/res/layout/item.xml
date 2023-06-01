@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/click"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:background="@drawable/btn_style1"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:padding="@dimen/_16sdp"
+    android:textDirection="rtl"
+    app:elevation="@dimen/_20sdp">
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:fontFamily="@font/gotham"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        tools:text="1500" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:fontFamily="@font/calibri"
+        android:maxWidth="@dimen/_67sdp"
+        android:maxLines="1"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        tools:text="كامل محمد كامل ألسيد" />
+
+    <TextView
+        android:id="@+id/item_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:gravity="left"
+        android:layout_weight="1"
+        android:fontFamily="@font/gotham"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_11ssp"
+        android:textStyle="bold"
+        tools:text="6666.0" />
+
+
+</LinearLayout>

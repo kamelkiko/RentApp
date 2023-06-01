@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.login.LoginFragment">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/good_morning_img" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:textDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:textDirection="ltr">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text=" صباح"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:textDirection="ltr">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham"
+                android:text="الخير"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_26ssp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:background="#deff00" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="username"
+            android:drawableEnd="@drawable/ic_email_white_24dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="@string/username"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp" />
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="password"
+            android:drawableEnd="@drawable/ic_lock_white_24dp"
+            android:drawablePadding="16dp"
+            android:fontFamily="@font/calibri"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/show_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_baseline_remove_red_eye_24" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/buttonshapewhitebg"
+                android:fontFamily="@font/calibri"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/calibri"
+            android:text="@string/welcome_back"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_18ssp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

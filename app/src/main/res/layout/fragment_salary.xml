@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272f36"
+    tools:context="fragment.salary.SalaryFragment">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        app:closeIcon="@drawable/close"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:searchHintIcon="@drawable/search2"
+        app:searchIcon="@drawable/searching_bar3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/to_not_paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/btn_style1"
+        android:backgroundTintMode="screen"
+        android:fontFamily="@font/gotham"
+        android:text="@string/not_paid"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:elevation="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@id/rec"
+        app:layout_constraintLeft_toRightOf="@id/search"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:textDirection="rtl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/search"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/to_not_paid"
+        tools:listitem="@layout/item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
